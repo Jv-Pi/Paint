@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="shortcut icon" href="https://www.flaticon.com/svg/vstatic/svg/751/751347.svg?token=exp=1613583559~hmac=6ce78253141afa489b66a13a33a98d8b" type="image/x-icon">
+    <title>Paint</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="controls">
+            <div class="title">White Board</div>
+            <div class="type">
+                <input type="radio" name="pen-type" id="pen-pencil" checked>
+                <label for="pen-pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                </label>
+                <input type="radio" name="pen-type" id="pen-brush">
+                <label for="pen-brush">
+                   <i class="fas fa-paint-brush"></i>
+                </label>
+            </div>
+            <div class="size">
+                <label for="pen-size">Size</label>
+                <input type="range" id="pen-size" min="1">
+            </div>
+            <div class="color">
+                <label for="pen-color">Color</label>
+                <input type="color" id="pen-color" value="#B0B0B0">
+            </div>
+            <div class="actions">
+                <button id="reset-canvas">Reset</button>
+                <button id="save-canvas">Save</button>
+            </div>
+        </div>
+        <div id="canvas-wrapper"></div>
+    </div>
+    <script src="Script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
+</body>
+
+</html>
